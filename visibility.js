@@ -113,6 +113,10 @@ export default function() {
     }
 
     function _elementInDocument(element) {
+
+        if (!(element instanceof Element))
+            return false;
+
         while (element = element.parentNode) {
             if (element == document) {
                     return true;
