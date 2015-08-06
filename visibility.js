@@ -4,8 +4,18 @@
  *
  * Description: Checks if a DOM element is truly visible.
  * Package URL: https://github.com/UseAllFive/true-visibility
+ *
+ * ----------------------------------------------------------
+ *
+ * This is a fork that uses ES6 export and doesn't extend the
+ * native Elenent object.
+ *
+ * Forked by: Dmirty Sobolev
+ * 
+ * Fork URL: https://github.com/dsblv/true-visibility
+ *
  */
-Element.prototype.isVisible = function() {
+export default function() {
 
     'use strict';
 
