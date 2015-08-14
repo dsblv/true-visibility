@@ -52,7 +52,9 @@ export default function() {
         if (
              '0' === _getStyle(el, 'opacity') ||
              'none' === _getStyle(el, 'display') ||
-             'hidden' === _getStyle(el, 'visibility')
+             'hidden' === _getStyle(el, 'visibility') ||
+             'hidden' === _getStyle(el, 'overflow-x') && '0px' === _getStyle(el, 'width')
+             'hidden' === _getStyle(el, 'overflow-y') && '0px' === _getStyle(el, 'height')
         ) {
             return false;
         }
